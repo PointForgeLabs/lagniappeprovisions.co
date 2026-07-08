@@ -3,24 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lagniappe Provisions | A little something extra</title>
-  <meta name="description" content="Small-batch cocktail syrups, bitters, and dried fruit, made in New Orleans by a majority woman-owned company. Twenty years of bar work went into these recipes." />
+  <title>Lagniappe Provisions | The extra is already in the bottle.</title>
+  <meta name="description" content="Small-batch cocktail syrups, bitters, and dried fruit garnishes. Twenty years of bar craft, Louisiana ingredients, no shortcuts. Made in New Orleans, majority woman-owned." />
   <link rel="canonical" href="https://lagniappeprovisions.co/" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="stylesheet" href="/styles.css" />
 
-  <meta property="og:title" content="Lagniappe Provisions | A little something extra" />
-  <meta property="og:description" content="Small-batch cocktail syrups, bitters, and dried fruit, made in New Orleans by a majority woman-owned company. Twenty years of bar work went into these recipes." />
+  <meta property="og:title" content="Lagniappe Provisions | The extra is already in the bottle." />
+  <meta property="og:description" content="Small-batch cocktail syrups, bitters, and dried fruit garnishes. Twenty years of bar craft, Louisiana ingredients, no shortcuts." />
   <meta property="og:url" content="https://lagniappeprovisions.co/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Lagniappe Provisions" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Lagniappe Provisions | A little something extra" />
-  <meta name="twitter:description" content="Small-batch cocktail syrups, bitters, and dried fruit, made in New Orleans by a majority woman-owned company. Twenty years of bar work went into these recipes." />
+  <meta name="twitter:title" content="Lagniappe Provisions | The extra is already in the bottle." />
+  <meta name="twitter:description" content="Small-batch cocktail syrups, bitters, and dried fruit garnishes. Twenty years of bar craft, Louisiana ingredients, no shortcuts." />
 
   <script type="application/ld+json">
   {
@@ -29,206 +29,183 @@
     "name": "Lagniappe Provisions",
     "url": "https://lagniappeprovisions.co/",
     "email": "hello@lagniappeprovisions.co",
-    "description": "Small-batch cocktail syrups, bitters, and dried fruit, made in New Orleans.",
+    "description": "Small-batch cocktail syrups, bitters, and dried fruit garnishes, made in New Orleans.",
     "address": { "@type": "PostalAddress", "addressLocality": "New Orleans", "addressRegion": "LA", "addressCountry": "US" }
   }
   </script>
 </head>
 <body>
 
-  <!-- ====== SITE CONFIG ====== -->
   <script>
-    // Set to a form endpoint (e.g. Formspree/Buttondown) to enable direct signup.
-    // While empty, the signup form falls back to a pre-filled email instead.
-    var FORM_ENDPOINT = '';
-    var CONTACT_EMAIL = 'hello@lagniappeprovisions.co';
+    // Set formEndpoint to a Formspree/Buttondown URL to enable direct signup.
+    // showAnnouncement toggles the green announcement bar (default true).
+    window.LP_CONFIG = {
+      formEndpoint: '',
+      contactEmail: 'hello@lagniappeprovisions.co',
+      showAnnouncement: true
+    };
   </script>
 
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="topbar">
-    <p>We are taking names for our first run. <a href="#signup">Join the list.</a></p>
+  <!-- ====== ANNOUNCEMENT BAR ====== -->
+  <div class="announce" role="region" aria-label="Announcement">
+    First run bottling now — <a href="#signup">join the list for launch access</a>
   </div>
 
-  <div class="container">
-    <nav aria-label="Primary">
-      <a href="/" class="brand-mark" aria-label="Lagniappe Provisions home">
-        <svg class="brand-logo" viewBox="0 0 48 48" role="img" aria-hidden="true">
-          <circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="2.5"/>
-          <path d="M18 13v20h13" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M33 15.5v7M29.5 19h7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
-        </svg>
-        <span class="brand-block">
-          <span class="brand-text">Lagniappe Provisions</span>
-          <span class="brand-tagline">A little something extra</span>
-        </span>
+  <!-- ====== NAV ====== -->
+  <nav class="nav" aria-label="Primary">
+    <a href="/" class="logo-lockup" aria-label="Lagniappe Provisions home">
+      <svg class="logo-coin" width="34" height="34" viewBox="0 0 100 100" aria-hidden="true">
+        <circle cx="50" cy="50" r="46" fill="#DFA23C"/>
+        <g stroke="#1C1710" stroke-width="9" stroke-linecap="round">
+          <line x1="50" y1="14" x2="50" y2="86"/>
+          <line x1="18.8" y1="32" x2="81.2" y2="68"/>
+          <line x1="81.2" y1="32" x2="18.8" y2="68"/>
+        </g>
+      </svg>
+      <span class="logo-words">
+        <span class="logo-word">Lagniappe</span>
+        <span class="logo-sub">Provisions · NOLA</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-links" id="nav-links">
+      <a class="nav-link" href="/products/spiced-cane-syrup.html">Provisions</a>
+      <a class="nav-link" href="#story">Story</a>
+      <a class="nav-link" href="#" aria-disabled="true" onclick="return false;">Wholesale</a>
+      <a class="btn-join" href="#signup">Join the List</a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- ====== HERO ====== -->
+    <header class="hero">
+      <p class="eyebrow hero-eyebrow">A little something extra — New Orleans, LA · Majority woman-owned</p>
+      <h1 class="display hero-title">
+        The Extra Is<br />
+        Already In<br />
+        <span class="line-purple">The Bottle.</span>
+      </h1>
+      <div class="hero-lower">
+        <p class="hero-body">Small-batch cocktail syrups, bitters, and dried garnishes. Twenty years of bar craft, Louisiana ingredients, no shortcuts.</p>
+        <div class="hero-actions">
+          <a class="btn btn-fill" href="#signup">Get First Access</a>
+          <a class="btn btn-outline" href="#" aria-disabled="true" onclick="return false;">Wholesale</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ====== PRODUCT BLOCKS ====== -->
+    <section class="product-blocks" aria-label="What we make">
+      <a class="pblock pblock-gold" href="/products/spiced-cane-syrup.html">
+        <div class="pblock-index"><span>01</span><span>&rarr;</span></div>
+        <h2 class="pblock-title">Cocktail Syrups</h2>
+        <div class="placeholder">bottle shot</div>
+        <p class="pblock-desc">Cane sugar, whole fruit, real spice — cooked small and bottled fresh.</p>
       </a>
-      <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false"
-              onclick="this.classList.toggle('open'); this.setAttribute('aria-expanded', this.classList.contains('open')); document.getElementById('nav-links').classList.toggle('open');">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav-links" id="nav-links">
-        <a href="#provisions">Provisions</a>
-        <a href="#story">Our Story</a>
-        <a href="#lagniappe">What&rsquo;s Lagniappe?</a>
-        <a href="#signup" class="nav-cta">Join the List</a>
+      <div class="pblock pblock-purple">
+        <div class="pblock-index"><span>02</span><span>&rarr;</span></div>
+        <h2 class="pblock-title">Bitters</h2>
+        <div class="placeholder">bottle shot</div>
+        <p class="pblock-desc">Whole botanicals, extracted slowly, balanced by palate.</p>
       </div>
-    </nav>
+      <div class="pblock pblock-green">
+        <div class="pblock-index"><span>03</span><span>&rarr;</span></div>
+        <h2 class="pblock-title">Dried Fruit</h2>
+        <div class="placeholder">citrus wheels</div>
+        <p class="pblock-desc">Citrus wheels, sliced thin and dried slow. The finishing touch.</p>
+      </div>
+    </section>
 
-    <main id="main">
+    <!-- ====== DEFINITION BAND ====== -->
+    <section class="definition" id="lagniappe" aria-label="Definition of lagniappe">
+      <div class="def-left">
+        <svg class="logo-coin" width="72" height="72" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="46" fill="#DFA23C"/>
+          <g stroke="#1C1710" stroke-width="9" stroke-linecap="round">
+            <line x1="50" y1="14" x2="50" y2="86"/>
+            <line x1="18.8" y1="32" x2="81.2" y2="68"/>
+            <line x1="81.2" y1="32" x2="18.8" y2="68"/>
+          </g>
+        </svg>
+        <p class="def-word">Lagniappe<span class="def-pron">/&lsquo;lan-yap/ noun</span></p>
+      </div>
+      <p class="def-body">A small gift, given freely. The thirteenth beignet. The oyster passed across the counter. In our kitchen — the extra time every batch gets before it earns a label.</p>
+    </section>
 
-      <!-- ====== HERO ====== -->
-      <header class="hero">
-        <div class="hero-copy">
-          <p class="kicker">New Orleans, Louisiana &middot; Majority Woman-Owned</p>
-          <h1 class="display">A little something<br /><em>extra.</em></h1>
-          <p class="lede">
-            We make cocktail syrups, bitters, and dried fruit garnishes in small batches, from real ingredients, with twenty years of bar work behind every recipe. 
-            The extra time, the better citrus, the batch we tested on a real bar before it ever touched a bottle. That's the lagniappe. It's already in there.
-          </p>
-          <div class="hero-actions">
-            <a href="#signup" class="btn btn-primary">Get first pick</a>
-            <a href="#story" class="btn btn-ghost">Read our story</a>
-          </div>
+    <!-- ====== STORY + AUDIENCES ====== -->
+    <section class="story" id="story">
+      <div class="story-main">
+        <p class="eyebrow story-eyebrow">Our Story</p>
+        <h2 class="story-title">Twenty Years Behind The Bar, Bottled.</h2>
+        <p class="story-body">Founded in Algiers Point by a bartender with two decades behind the rail. Cane sugar from Alma Plantation, citrus from Becnel Farms, honey from The B Farm — everything within a day&rsquo;s drive, everything tested on a working bar first.</p>
+      </div>
+      <div class="audiences">
+        <div class="aud-row">
+          <span class="aud-label">Home Bar</span>
+          <span class="aud-note">Pro-grade ingredients, sized for your shelf.</span>
         </div>
-        <div class="hero-panel" aria-hidden="true">
-          <div class="crate">
-            <span class="crate-stamp">EST. LOUISIANA</span>
-            <span class="crate-word">LAGNIAPPE</span>
-            <span class="crate-sub">SYRUPS &middot; BITTERS &middot; DRY FRUIT</span>
-            <span class="crate-rule"></span>
-            <span class="crate-note">made with a little extra care</span>
-          </div>
+        <div class="aud-row aud-gold">
+          <span class="aud-label">The Trade</span>
+          <span class="aud-note">Wholesale pricing, reliable lead times.</span>
         </div>
-      </header>
-
-      <!-- ====== DEFINITION ====== -->
-      <section class="definition" id="lagniappe" aria-label="Definition of lagniappe">
-        <p class="def-word">lagniappe <span class="def-phonetic">/ &lsquo;lan-yap /</span> <span class="def-pos">noun</span></p>
-        <p class="def-body">
-        Down here, lagniappe means a little something extra. The thirteenth beignet. The oyster the shucker slides you while you wait. It's not a bonus you pay for and it's not a gimmick. It's generosity worked into the thing itself instead of tacked on after.
-
-That's how we make everything. The extra step isn't extra to us. It's just how it's done.
-        </p>
-      </section>
-
-      <!-- ====== PROVISIONS ====== -->
-      <section class="section" id="provisions">
-        <p class="kicker">What we make</p>
-        <h2>Three things, made properly</h2>
-        <div class="card-grid">
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 32 32"><path d="M11 4h10v4c2 1.5 3 3.5 3 6v12a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2V14c0-2.5 1-4.5 3-6V4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8 18h16" stroke="currentColor" stroke-width="2"/></svg>
-            </div>
-            <h3>Cocktail Syrups</h3>
-            <p>Real sugar, real fruit, real spice, cooked in small batches and bottled fresh. Louisiana cane sugar, citrus from down the river, honey from folks we know by name. A syrup should taste like the thing on the label. Ours do.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 32 32"><path d="M16 4c3 4 8 6 8 13a8 8 0 1 1-16 0c0-7 5-9 8-13z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 19a4 4 0 0 0 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            </div>
-            <h3>Bitters</h3>
-            <p>Whole botanicals, extracted slow, balanced by palate instead of by spreadsheet. Bitters are the seasoning of a drink, a dash or two that pulls everything into focus. Twenty years behind the bar taught us exactly where that focus lives.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 32 32"><rect x="5" y="12" width="22" height="15" rx="1.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 12l3-6h16l3 6M16 6v21" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-            </div>
-            <h3>Dried Fruit</h3>
-            <p>Citrus wheels and garnishes that finish a drink the way it deserves. Sliced thin, dried slow, ready when you are. It's the last ninety seconds of care, done ahead of time so you don't have to.</p>
-          </article>
-        </div>
-      </section>
-
-      <!-- ====== STORY ====== -->
-      <section class="section section-story" id="story">
-        <div class="story-grid">
-          <div>
-            <p class="kicker">Our story</p>
-            <h2>Twenty years behind the bar taught us a few things</h2>
-          </div>
-          <div class="story-copy">
-            <p>
-             Lagniappe Provisions started in a kitchen in Algiers Point, with a stovetop full of test batches and a growing suspicion that the syrups behind most bars weren't good enough. What began as making better ingredients for our own drinks turned into recipes worth sharing, then recipes worth bottling.
-Merry and Jason built the company on a simple idea. Source close to home, make it in small batches, and test everything on real drinks before it goes in a bottle. Alma Plantation cane sugar. Becnel Farms citrus. Honey from The B Farm. Everything within a day's drive of the kitchen where it all started.
-We named the company after the thing we believe in most. The little extra, given freely, built in from the start.
-            </p>
-          </div>
-        </div>
-        <ul class="values" role="list">
-          <li><strong>Bar-tested.</strong> Everything gets tried on a real bar before we sell it to you.</li>
-          <li><strong>Majority woman-owned.</strong> Not a marketing point. Just a fact.</li>
-          <li><strong>Always lagniappe.</strong> Extra care in every batch. </li>
-        </ul>
-      </section>
-
-      <!-- ====== SIGNUP ====== -->
-      <section class="section signup" id="signup">
-        <div class="signup-inner">
-          <p class="kicker">Opening soon</p>
-          <h2>Get on the list</h2>
-          <p class="lede">
-          We're bottling our first run now. Leave your email and you'll hear the moment it's ready, plus a recipe or two while you wait. That part's lagniappe.
-          </p>
-          <form id="signup-form" class="signup-form" novalidate>
-            <label class="visually-hidden" for="signup-email">Email address</label>
-            <input id="signup-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" />
-            <button type="submit" class="btn btn-primary">Join the list</button>
-          </form>
-          <p class="signup-note" id="signup-note">No spam. We do not have time for that either.</p>
-        </div>
-      </section>
-
-    </main>
-
-    <footer>
-      <div class="footer-grid">
-        <div>
-          <p class="footer-brand">Lagniappe Provisions</p>
-          <p class="footer-sub">A little something extra. New Orleans, Louisiana.</p>
-        </div>
-        <div class="footer-links">
-          <a href="mailto:hello@lagniappeprovisions.co">hello@lagniappeprovisions.co</a>
-          <a href="#lagniappe">What&rsquo;s lagniappe?</a>
-          <a href="#signup">Join the list</a>
+        <div class="aud-row">
+          <span class="aud-label">Gifting</span>
+          <span class="aud-note">Boxed sets with a story worth telling.</span>
         </div>
       </div>
-      <p class="footer-legal">&copy; <span id="year">2026</span> Lagniappe Provisions. All rights reserved.</p>
-    </footer>
-  </div>
+    </section>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
+    <!-- ====== SIGNUP BAND ====== -->
+    <section class="signup" id="signup">
+      <div class="signup-left">
+        <h2 class="signup-title">Be First In Line.</h2>
+        <p class="signup-copy">First run bottling now. Launch access plus a house recipe or two while you wait.</p>
+      </div>
+      <form class="signup-form" id="signup-form" novalidate>
+        <label class="visually-hidden" for="signup-email">Email address</label>
+        <input id="signup-email" name="email" type="email" required autocomplete="email" placeholder="you@example.com" />
+        <button type="submit" class="btn-signup">Join &rarr;</button>
+      </form>
+      <div class="signup-done" id="signup-done" hidden>&#10022; You&rsquo;re on the list. Lagniappe coming your way.</div>
+    </section>
 
-    document.getElementById('signup-form').addEventListener('submit', function (e) {
-      e.preventDefault();
-      var email = document.getElementById('signup-email').value.trim();
-      var note = document.getElementById('signup-note');
-      if (!email || email.indexOf('@') < 1) {
-        note.textContent = 'Please enter a valid email address.';
-        return;
-      }
-      if (FORM_ENDPOINT) {
-        fetch(FORM_ENDPOINT, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-          body: JSON.stringify({ email: email })
-        }).then(function (res) {
-          note.textContent = res.ok
-            ? 'You are on the list. Talk soon.'
-            : 'Something went wrong. Email us at ' + CONTACT_EMAIL + ' and we will add you.';
-        }).catch(function () {
-          note.textContent = 'Something went wrong. Email us at ' + CONTACT_EMAIL + ' and we will add you.';
-        });
-      } else {
-        // No form backend configured yet: hand off to the visitor's mail client.
-        window.location.href = 'mailto:' + CONTACT_EMAIL
-          + '?subject=' + encodeURIComponent('Add me to the Lagniappe Provisions list')
-          + '&body=' + encodeURIComponent('Please add ' + email + ' to the launch list.');
-        note.textContent = 'Opening your email app. Or write us at ' + CONTACT_EMAIL + '.';
-      }
-    });
-  </script>
+  </main>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <a href="/" class="logo-lockup logo-footer" aria-label="Lagniappe Provisions home">
+        <svg class="logo-coin" width="30" height="30" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="46" fill="#DFA23C"/>
+          <g stroke="#1C1710" stroke-width="9" stroke-linecap="round">
+            <line x1="50" y1="14" x2="50" y2="86"/>
+            <line x1="18.8" y1="32" x2="81.2" y2="68"/>
+            <line x1="81.2" y1="32" x2="18.8" y2="68"/>
+          </g>
+        </svg>
+        <span class="logo-word">Lagniappe<span class="logo-star">*</span></span>
+      </a>
+      <div class="footer-links">
+        <a href="/products/spiced-cane-syrup.html">Provisions</a>
+        <a href="#story">Story</a>
+        <a href="#" aria-disabled="true" onclick="return false;">Wholesale</a>
+        <a href="mailto:hello@lagniappeprovisions.co">hello@lagniappeprovisions.co</a>
+      </div>
+    </div>
+    <hr class="footer-divider" />
+    <div class="footer-legal">
+      <span>&copy; <span id="year">2026</span> Lagniappe Provisions — New Orleans, LA</span>
+      <span>Majority woman-owned · Made in Louisiana</span>
+    </div>
+  </footer>
+
+  <script src="/site.js"></script>
 </body>
 </html>

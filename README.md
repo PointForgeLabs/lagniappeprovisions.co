@@ -10,12 +10,24 @@ https://lagniappeprovisions.co.
 
 | File | Purpose |
 |---|---|
-| `index.html` | Landing page: hero, lagniappe definition, product lineup (syrups/bitters/dried fruit), story, email signup |
-| `styles.css` | All styling (Fraunces + Inter, cream/bayou-green/brass palette) |
+| `index.html` | Home: hero, product blocks (syrups/bitters/dried fruit), lagniappe definition, story + audiences, email signup |
+| `products/spiced-cane-syrup.html` | Product detail page (media column, specs, qty stepper, add-to-cart, related products) |
+| `styles.css` | All styling ("Second Line" design system — Archivo + IBM Plex Mono, ink/cream/gold/purple/green, flat blocks, 3px rules, zero radius) |
+| `site.js` | Shared behavior: mobile nav, offset smooth-scroll, signup swap, qty stepper + add-to-cart |
 | `404.html` | Custom not-found page (GitHub Pages picks this up automatically) |
-| `favicon.svg` | Monogram favicon |
+| `favicon.svg` | Asterisk-coin logo mark |
 | `CNAME` | Custom-domain binding for GitHub Pages |
 | `robots.txt`, `sitemap.xml` | Basic SEO plumbing |
+
+## Design system ("Second Line")
+
+Bold editorial: oversized uppercase Archivo display, IBM Plex Mono micro-labels,
+flat Mardi Gras-adjacent color blocks, signature **3px solid ink rules**, no
+rounded corners, no shadows. Tokens live in `:root` at the top of `styles.css`
+(`--ink #1c1710`, `--cream #f5efe2`, `--gold #dfa23c`, `--purple #8a2d5e`,
+`--green #2e6b4f`). Dashed/striped boxes are placeholders for product
+photography that doesn't exist yet — swap them for real `<img>` shots when
+available.
 
 ## Deploying with GitHub Pages
 
